@@ -6,7 +6,7 @@ import {Server as Sockertserver} from 'socket.io'
 import http from 'http'
 import cors from 'cors'
 import bodyParser from 'body-parser'
-import router from './routes/message.js'
+import router from './routes/routes.js'
 
 
 
@@ -31,7 +31,7 @@ app.use('/api',router)
 
 
 io.on('connection', (socket)=>{
-    console.log('cliente conectado: ',socket.id)
+    
     
     socket.on('message', (message, nickname)=>{
 
