@@ -29,6 +29,19 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 app.use('/api',router)
 
+
+io.on('connection', (socket)=>{
+    console.log('cliente conectado: ',socket.id)
+    
+    socket.on('message', (message, nickname)=>{
+
+        socket.broadcast.emit('message',{
+            body: message,
+            from: nickname
+        })
+    })
+})
+
 // Conexion con base de datos (MONGODB)
 dbConexion;
 
