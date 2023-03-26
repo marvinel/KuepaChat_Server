@@ -11,6 +11,7 @@ var controller = {
             var message = new MessageSchema()
                 message.message = params.message
                 message.from = params.from
+                message.userType = params.userType
             const messageStored = await message.save()
                 
             if(!messageStored){
