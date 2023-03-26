@@ -12,5 +12,4 @@ Para poder descargar todas las dependencias necesarias.\
 
 ### `npm start`
 
-Corre la aplicacion en modo desarrollo.\
-Si pudiste ejecutar la aplicación lograras ver en la consola el mensaje de "Servidor Ejecutandose en http://localhost: 4000".
+Una vez ejecutada la aplicación lograras ver en la consola el mensaje de "Servidor Ejecutandose en http://localhost: 4000".
