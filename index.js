@@ -33,11 +33,12 @@ app.use('/api',router)
 io.on('connection', (socket)=>{
     
     
-    socket.on('message', (message, nickname)=>{
+    socket.on('message', (message, nickname, usertype)=>{
 
         socket.broadcast.emit('message',{
             body: message,
-            from: nickname
+            from: nickname,
+            type: usertype
         })
     })
 })

@@ -49,7 +49,7 @@ var controller = {
 
     // FUNCION PARA OBTENER MENSAJES
     getMessage: async (req, res) => {
-        await MessageSchema.find().sort('-_id')
+        await MessageSchema.find()
         .then((message)=>{
             if(!message){
                 return res.status(404).send({
