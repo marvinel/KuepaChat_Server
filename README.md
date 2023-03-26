@@ -10,7 +10,7 @@ En el directorio del proyecto correr el siguiente comando :
 
 Para poder descargar todas las dependencias necesarias.\
 
-### `npm run dev`
+### `npm start`
 
 Corre la aplicacion en modo desarrollo.\
 Si pudiste ejecutar la aplicación lograras ver en la consola el mensaje de "Servidor Ejecutandose en http://localhost: 4000".
